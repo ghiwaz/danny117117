@@ -9,6 +9,7 @@ class homeController extends Controller
 {
     public function index()
     {
+      // this work 
         $client = new \GuzzleHttp\Client();
         $request = $client->get('jsonplaceholder.typicode.com/users');
         $response = json_decode($request->getBody());
